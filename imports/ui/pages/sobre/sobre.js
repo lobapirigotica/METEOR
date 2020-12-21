@@ -1,0 +1,2 @@
+import './sobre.html';
+

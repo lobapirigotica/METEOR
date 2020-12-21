@@ -1,0 +1,12 @@
+<template name="animais">
+  <h2>Lista de Animais</h2>
+  <form class="animais-add">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="submit" name="submit" value="Adicionar Animal">
+  </form>
+  <ul style="margin-top: 10px;">
+    {{#each animais}}
+      <li>{{nome}} <button class="btn btn-sm shadow btn-danger delete">X</button></li>
+    {{/each}}
+  </ul>
+</template>
